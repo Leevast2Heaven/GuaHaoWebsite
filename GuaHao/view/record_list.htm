@@ -1,0 +1,24 @@
+<div id="recordindex" class="list2">
+  <div class="quickmenu">
+    <form class="form1" method="post">
+    <p>诊室：{quickmenu.room}</p>
+    <p>时间：{quickmenu.date}<input type="text" name="starttime" size="6" onfocus="setday(this)" value="{quickmenu.starttime}"  /> - <input type="text" name="endtime" size="6"  onfocus="setday(this)" value="{quickmenu.endtime}" /> <input type="submit" name="submit" value="查询"  /></p>
+    </form>
+  </div>
+  <table cellpadding="0" cellspacing="0">
+    <tr>
+      <td colspan="8">总共有 {record.num} 条预约记录</td>
+    </tr>
+    <tr class="title">
+      <td width="90">来院时间</td>
+      <td width="122">发布时间</td>
+      <td width="110">预约科室</td>
+      <td width="70">姓名</td>
+      <td width="60">性别</td>
+      <td width="34">年龄</td>
+      <td width="170">备注</td>
+      <td width="36">操作</td>
+    </tr>
+  {record.list}
+  </table>
+</div>

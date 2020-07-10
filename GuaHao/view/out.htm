@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="www.mgadmin.com"> 
+<title>{config.operate.name}-{config.model.name}-{config.sys.name}</title>
+<link type="text/css" href="view/images/style.css" rel="stylesheet" />
+<script type="text/javascript" src="view/images/global.js"></script>
+</head>
+
+<body>
+<div id="mg">
+<div id="header">
+  <h1>{config.sys.name}  {config.sys.version}</h1>
+  <ul class="nav">
+    <li><a href="?m=record&o=list" title="患者预约记录">⊹ 预约记录</a></li>
+    <li><a href="?m=room" title="科室管理">科室(R)</a></li>
+    <li><a href="?m=set" title="系统设置">系统(S)</a></li>
+    <li><a href="?m=user&o=edit" title="点击修改个人资料">个人(P)</a></li>
+    <li><a href="?m=about" title="关于">关于(H)</a></li>
+    <li><a href="quit.php" title="安全退出">退出(Q)</a></li>
+  </ul>
+</div>
+<div id="container">
+  <div id="operate">
+    <ul>
+      {html.menu}
+    </ul>
+  </div>
+  <div id="main">
+    <div id="position">
+      <p>▶ 当前位置：{html.position}</p>
+    </div>
+    {html.main}
+  </div>
+  <div class="cl"></div>
+</div>
+<div id="footer"><p>温馨提醒：本系统在IE7.0以上版本的浏览器中表现更佳。</p>
+</div>
+</div>
+</body>
+</html>

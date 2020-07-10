@@ -1,0 +1,58 @@
+<meta charset="utf-8">
+<link type="text/css" href="{config.sys.path}view/images/guahao.css" rel="stylesheet" />
+<script type="text/javascript" src="{config.sys.path}view/images/guahao.js"></script>
+<div id="hnguahao">
+  <form action="{config.sys.path}guahao.php?submit=1" method="post" id="gh_form">
+  <h1>在线挂号</h1>
+    <table cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr class="tr1">
+          <td width="100"><b>您的姓名：</b></td>
+          <td><input type="text" class="text_s" name="name" id="gh_name" /></td>
+          <td><u>*</u></td>
+        </tr>
+        <tr>
+          <td><b>您的年龄：</b></td>
+          <td><input type="text" class="text_s" name="age" id="gh_age" /></td>
+          <td><u>*</u></td>
+        </tr>
+        <tr class="tr1">
+          <td><b>您的性别：</b></td>
+          <td>男士<input type="radio" name="sex" value="1" id="gh_sex" /> 女士<input type="radio" name="sex" value="0" /></td>
+          <td><u>*</u></td>
+        </tr>
+        <tr>
+          <td valign="top"><b>预约科室：</b></td>
+          <td><select name="rid" id="gh_subject">
+              {room.options}
+              </select></td>
+          <td><u>*</u></td>
+        </tr>
+        <tr class="tr1">
+          <td><b>联系电话：</b></td>
+          <td><input type="text" class="text_m" name="tel" id="gh_tel" /></td>
+          <td><u>*</u></td>
+        </tr>
+        <tr>
+          <td valign="top"><b>预约附言：</b></td>
+          <td><textarea name="note" class="area_m" ></textarea></td>
+          <td></td>
+        </tr>
+        <tr class="tr1">
+          <td><b>来院时间(Y-M-D)：</b></td>
+          <td><input onfocus="setday(this)" name="comedate" class="text_m" id="gh_comedate"></td>
+          <td><u>*</u></td>
+        </tr>
+        <tr>
+          <td><b>验证码：</b></td>
+          <td><input type="text" class="text_s" name="yanzheng" id="gh_yanzheng" /> <img src="lib/yanzheng.php" /></td>
+          <td><u>*</u></td>
+        </tr>
+        <tr class="tr1">
+          <td colspan="3" align="center"><a href="javascript:submitForm();" class="submit"><img src="view/images/submit.gif" alt="" /></a></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="bot">Leevast版权所有</p>
+  </form>
+</div>

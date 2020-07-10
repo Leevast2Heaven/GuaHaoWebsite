@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+body{ font-size:12px;  color:#000; background:#02729a url(bg.jpg) center 0 fixed repeat-x; padding:10px 0; font-family:"宋体" }
+h1,h2{ font-size:18px; }
+h2{ font-size:14px; line-height:30px;}
+ul,li{ list-style:none}
+a{ color:#02729a}
+a:hover{ color:#000}
+.red{ color:#F00}
+.blue{ color:#3d5d00}
+.gray{ color:#aaa}
+tr:hover{ background: #FCC;}
+
+#hnguahao{ width:460px; height:500px; margin:0 auto}
+#guahao_admin{ width:942px; background:#09C; border:1px dashed #fff;  padding:20px; margin:0 auto  }
+#header,#container,#footer{ width:920px; margin:0 auto; background:#fff; border:1px solid #02729a; border-width:0 1px; padding:10px;}
+#header{ border:1px solid #02729a; background:#9CF; color:#000 ; height:60px; overflow:hidden}
+#header h1{ line-height:40px; color:#000; font-weight:100; font-size:20px }
+#header a{ color:#02729a }
+#header ul.nav{ width:430px; float:left; background:#9CF; padding-left:10px}
+#header ul.nav li{ display:inline; padding:0 6px; line-height:31px; height:30px; font-size:13px; }
+#header ul.nav li a{}
+#header ul.nav li a:hover{ color:#000}
+#header  a{ text-decoration:none}
+#header p.user  a:hover{ text-decoration:underline; color:#fff}
+#header p.user{ float:right; width:300px;  line-height:30px;  text-align:center; color:#02729a}
+#container{ min-height:500px;_height:500px; padding-top:10px; }
+#container div#operate{ border:2px solid #02729a; line-height:30px; margin-bottom:10px}
+#container div#operate ul li{ display:inline; padding:0 10px}
+#container div#work{border:1px solid #02729a; padding:10px 10px 30px; min-height:300px}
+#footer{ border-width:1px; text-align:center; color:#666; line-height:20px}
+
+
+
+
+
+#login{ width:520px; background: #09C; border:1px dashed #fff;  padding:30px; position:absolute; top:50%; left:50%; margin:-150px auto auto -280px;  }
+#login .content{ width:500px; background: #9CF; border:1px solid #02729a; height:220px; padding:20px 10px 10px; margin:0 auto  }
+#login a{ text-decoration:none}
+#login a:hover{ text-decoration:underline}
+#login h1{ font-size:20px; font-weight:100; color:#036}
+#login h1,#login h2{ text-align:center}
+#login h2{ letter-spacing:1px; color:#333; font-size:13px; font-weight:100}
+#login table{ margin:10px auto; width:300px; font-weight:bold}
+#login table a{ font-weight:100}
+#login table tr td{ padding:5px}
+#login table tr td input.text{ width:200px}
+#login table tr td input.text_s{ width:60px}
+#login p{ text-align:center; line-height:20px; border-top:1px solid #02729a; padding:5px 0 0 0; color:#333}
+
+
+#main{ border:1px solid #ccc; padding:10px}
+
+.pagelinks{ text-align:center; line-height:22px; padding:10px}
+.pagelinks a{ margin:0 1px; white-space:nowrap}
+.pagelinks a.current{ text-decoration:none; color:#F00}
+
+
+.form1 table tr td{ padding:5px;}
+.form1 input.text_s{ width:200px; height:20px; line-height:20px}
+.form1 textarea.area_s{ width:200px; height:60px; line-height:20px}
+.form1 input.text_m{ width:500px; height:20px; line-height:20px}
+.form1 textarea.area_m{ width:500px; height:80px; line-height:20px}
+.form1 a.btn1{ border:1px solid #09c; background:#09c; color:#fff; padding:2px 5px 3px; text-decoration:none; float:left; line-height:20px; height:20px; margin-right:10px}
+.form1 a.btn1:hover{ background:#fff; color:#09c;}
+.form1 tr.operate2 td{ height:24px; line-height:24px}
+.form1 tr.msg{ color: #900}
+.form1 p{ line-height:22px; padding:2em; color: #069}
+
+.list1 table{ width:100%}
+.list1 table tr td{ padding:5px; height:20px; line-height:20px;}
+.list1 table tr.title{ background:#9CF; color:#000}
+.list1 table tr.title td{ font-size:13px}
+.list1 table tr td p.note{ width:350px}
+.list1 table tr td p.subject{ width:100px}
+.list1 table tr td p.name{ width:80px}
+
+#arc_edit{ width:700px; margin:0 auto}
+
+#help h2{ margin-top:10px}
+#help p{ line-height:20px;}
